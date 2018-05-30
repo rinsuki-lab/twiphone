@@ -1,15 +1,10 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- */
-
 import React = require("react")
 import {
     Platform,
     StyleSheet,
     Text,
-    View
-} from 'react-native';
+    View,
+} from "react-native"
 
 const instructions = Platform.select({
     ios: 'Press Cmd+R to reload,\n' +
@@ -18,8 +13,7 @@ const instructions = Platform.select({
         'Shake or press menu button for dev menu',
 });
 
-type Props = {};
-export default class App extends React.Component<Props> {
+export class PagesHome extends React.Component {
     render() {
         return (
             <View style={styles.container}>
